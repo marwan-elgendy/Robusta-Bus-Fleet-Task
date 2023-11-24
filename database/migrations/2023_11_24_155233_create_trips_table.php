@@ -19,9 +19,9 @@ return new class extends Migration
             $table->unsignedBigInteger('bus_id');
             $table->timestamps();
 
-            $table->foreign('start_city_id')->references('id')->on('cities');
-            $table->foreign('end_city_id')->references('id')->on('cities');
-            $table->foreign('bus_id')->references('id')->on('buses');
+            $table->foreign('start_city_id')->references('id')->on('cities')->onDelete('cascade');
+            $table->foreign('end_city_id')->references('id')->on('cities')->onDelete('cascade');
+            $table->foreign('bus_id')->references('id')->on('buses')->onDelete('no action');
 
             $table->index('start_city_id');
             $table->index('end_city_id');

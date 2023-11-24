@@ -22,11 +22,11 @@ return new class extends Migration
             $table->double('cost');
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('trip_id')->references('id')->on('trips');
-            $table->foreign('start_stop_id')->references('id')->on('trip_stops');
-            $table->foreign('end_stop_id')->references('id')->on('trip_stops');
-            $table->foreign('seat_id')->references('id')->on('seats');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('no action');
+            $table->foreign('trip_id')->references('id')->on('trips')->onDelete('no action');
+            $table->foreign('start_stop_id')->references('id')->on('trip_stops')->onDelete('no action');
+            $table->foreign('end_stop_id')->references('id')->on('trip_stops')->onDelete('no action');
+            $table->foreign('seat_id')->references('id')->on('bus_seats')->onDelete('no action');
 
             # Add Indexes for Foreign Keys, this will help with search performance as there will be many reads
             # compared to writes in order to find out if a seat is available.

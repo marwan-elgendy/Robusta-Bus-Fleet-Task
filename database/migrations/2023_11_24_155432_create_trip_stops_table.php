@@ -22,8 +22,8 @@ return new class extends Migration
             $table->double('cost');
             $table->timestamps();
 
-            $table->foreign('trip_id')->references('id')->on('trips');
-            $table->foreign('city_id')->references('id')->on('cities');
+            $table->foreign('trip_id')->references('id')->on('trips')->onDelete('cascade');
+            $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
 
             $table->index('trip_id');
             $table->index('city_id');
