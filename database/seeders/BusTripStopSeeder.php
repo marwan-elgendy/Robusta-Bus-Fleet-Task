@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\TripStop;
+use Illuminate\Support\Carbon;
 
 class BusTripStopSeeder extends Seeder
 {
@@ -157,7 +158,7 @@ class BusTripStopSeeder extends Seeder
                 'trip_id' => 4,
                 'city_id' => 3,
                 'order' => 1,
-                'date' => date('Y-m-d') + 1,
+                'date' => Carbon::now()->addDays(1)->format('Y-m-d'),
                 'departure_time' => '15:00:00',
                 'arrival_time' => '17:00:00',
                 'cost' => 0
@@ -166,7 +167,7 @@ class BusTripStopSeeder extends Seeder
                 'trip_id' => 4,
                 'city_id' => 1,
                 'order' => 2,
-                'date' => date('Y-m-d') + 1,
+                'date' => Carbon::now()->addDays(1)->format('Y-m-d'),
                 'departure_time' => '17:00:00',
                 'arrival_time' => '19:00:00',
                 'cost' => 200
