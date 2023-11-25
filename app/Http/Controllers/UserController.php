@@ -84,8 +84,9 @@ class UserController extends Controller
      * @param string $name
      * @return \Illuminate\Http\JsonResponse
      */
-    public function showByName($name)
+    public function showByName(Request $request)
     {
+        $name = $request->name;
         $user = $this->userRepository->findByName($name);
         if(!$user){
             return response()->json([
@@ -103,8 +104,9 @@ class UserController extends Controller
      * @param string $email
      * @return \Illuminate\Http\JsonResponse
      */
-    public function showByEmail($email)
+    public function showByEmail(Request $request)
     {
+        $email = $request->email;
         $user = $this->userRepository->findByEmail($email);
         if(!$user){
             return response()->json([
@@ -148,26 +150,6 @@ class UserController extends Controller
             'message' => 'User successfully deleted',
             'data' => $user
         ], 200);
-    }
-
-    /**
-     * @param UserCreateRequest $request
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function storeAdmin(UserCreateRequest $request)
-    {
-        $user = $this->userRepository->create($request->all());
-        if(!$user){
-            return response()->json([
-                'success' => false,
-                'message' => 'Sorry, admin user could not be created'
-            ], 500);
-        }
-        return response()->json([
-            'success' => true,
-            'message' => 'Admin user successfully created',
-            'data' => $user
-        ], 201);
     }
 
 }
