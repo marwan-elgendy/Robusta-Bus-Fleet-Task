@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Repositories\TripRepository;
 use App\Http\Requests\TripCreateRequest;
+use App\Http\Requests\TripSearchRequest;
 
 class TripController extends Controller
 {
@@ -81,12 +82,13 @@ class TripController extends Controller
     }
 
     /**
-     * @param string $name
+     * @param string $title
      * @return \Illuminate\Http\JsonResponse
      */
-    public function showByName($name)
+    public function showByTitle(Request $request)
     {
-        $trip = $this->tripRepository->findbyTitle($name);
+        $title = $request->title;
+        $trip = $this->tripRepository->findbyTitle($title);
         if(!$trip){
             return response()->json([
                 'success' => false,
@@ -103,7 +105,7 @@ class TripController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function Search(Request $request)
+    public function search(TripSearchRequest $request)
     {
         $trips = $this->tripRepository->search($request->all());
         if(!$trips){

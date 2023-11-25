@@ -33,11 +33,18 @@ Route::middleware('auth:api')->group(function(){
         Route::get('user-profile', [AuthController::class, 'userProfile'])->name('user-profile');
     });
 
+    // Trip routes
+    Route::get('/trips', [TripController::class, 'index'])->name('trips');
+    Route::get('/trips/{id}', [TripController::class, 'show'])->name('trips.show');
+    Route::post('/trips/title', [TripController::class, 'showByTitle'])->name('trips.showByTitle');
+    Route::post('/trips/search', [TripController::class, 'search'])->name('trips.search');
+    // Group prefix admin
     Route::group(['prefix' => 'admin', 'middleware' => 'is_admin'], function () {
         Route::get('users', [UserController::class, 'index'])->name('users');
         Route::get('users/{id}', [UserController::class, 'show'])->name('users.show');
+        Route::post('users/name', [UserController::class, 'showByName'])->name('users.showByName');
+        Route::post('users/email', [UserController::class, 'showByEmail'])->name('users.showByEmail');
         Route::post('users', [UserController::class, 'store'])->name('users.store');
-        ROute::post('users/admin', [UserController::class, 'storeAdmin'])->name('users.storeAdmin');
         Route::put('users/{id}', [UserController::class, 'update'])->name('users.update');
         Route::delete('users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
 
@@ -49,8 +56,6 @@ Route::middleware('auth:api')->group(function(){
         Route::delete('/cities/{id}', [CityController::class, 'destroy'])->name('cities.delete');
 
         // Trips routes
-        Route::get('/trips', [TripController::class, 'index'])->name('trips');
-        Route::get('/trips/{id}', [TripController::class, 'show'])->name('trips.show');
         Route::post('/trips', [TripController::class, 'store'])->name('trips.store');
         Route::put('/trips/{id}', [TripController::class, 'update'])->name('trips.update');
         Route::delete('/trips/{id}', [TripController::class, 'destroy'])->name('trips.delete');
@@ -70,12 +75,12 @@ Route::middleware('auth:api')->group(function(){
         Route::put('/bookings/{id}', [BookingController::class, 'update'])->name('bookings.update');
         Route::delete('/bookings/{id}', [BookingController::class, 'destroy'])->name('bookings.delete');
         
-        // TripStops routes
-        Route::get('/trip-stops', [TripStopController::class, 'index'])->name('trip-stops');
-        Route::get('/trip-stops/{id}', [TripStopController::class, 'show'])->name('trip-stops.show');
-        Route::post('/trip-stops', [TripStopController::class, 'store'])->name('trip-stops.store');
-        Route::put('/trip-stops/{id}', [TripStopController::class, 'update'])->name('trip-stops.update');
-        Route::delete('/trip-stops/{id}', [TripStopController::class, 'destroy'])->name('trip-stops.delete');
+        // // TripStops routes
+        // Route::get('/trip-stops', [TripStopController::class, 'index'])->name('trip-stops');
+        // Route::get('/trip-stops/{id}', [TripStopController::class, 'show'])->name('trip-stops.show');
+        // Route::post('/trip-stops', [TripStopController::class, 'store'])->name('trip-stops.store');
+        // Route::put('/trip-stops/{id}', [TripStopController::class, 'update'])->name('trip-stops.update');
+        // Route::delete('/trip-stops/{id}', [TripStopController::class, 'destroy'])->name('trip-stops.delete');
         
     });
 });

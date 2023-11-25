@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TripCreateRequest extends FormRequest
@@ -11,7 +12,7 @@ class TripCreateRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -30,21 +31,37 @@ class TripCreateRequest extends FormRequest
             'trip_stops.*.city_id' => 'required|integer|exists:cities,id',
             'trip_stops.*.arrival_time' => 'required|date_format:H:i',
             'trip_stops.*.departure_time' => 'required|date_format:H:i',
+            'trip_stops.*.cost' => 'required|integer|min:0',
             'trip_stops.*.order' => 'required|integer|min:1',
             # First trip stop should be the start city
-            'trip_stops.0.city_id' => 'required|integer|exists:cities,id|in:'.$this->start_city_id,
+            'trip_stops.0.city_id' => [
+                'required',
+                'integer',
+                'exists:cities,id',
+                Rule::in([$this->start_city_id]),
+            ],
             # Last trip stop should be the end city
-            'trip_stops.'.count($this->trip_stops).'.city_id' => 'required|integer|exists:cities,id|in:'.$this->end_city_id,
-            # First trip stop should have departure time greater than current time
-            'trip_stops.0.departure_time' => 'required|date_format:H:i|after:now',
+            'trip_stops.'.count($this->trip_stops).'.city_id' => [
+                'integer',
+                'exists:cities,id',
+                Rule::in([$this->end_city_id]),
+            ],
             # Trip stop arrival time should be greater than departure time
             'trip_stops.*.arrival_time' => 'required|date_format:H:i|after:trip_stops.*.departure_time',
-            # Trip stop departure time should be greater than previous stop arrival time
-            'trip_stops.*.departure_time' => 'required|date_format:H:i|after:trip_stops.*.arrival_time',
+            'trip_stops.*.departure_time' => [
+                'required',
+                'date_format:H:i'
+            ],
             # Trip stop cost should be greater than or equal to 0
             'trip_stops.0.cost' => 'required|integer|min:0|max:0',
             # Trip stop order should be unique for each trip
-            'trip_stops.*.order' => 'required|integer|unique:trip_stops,order,NULL,id,trip_id,'.$this->id,
+            'trip_stops.*.order' => [
+                'required',
+                'integer',
+                Rule::unique('trip_stops', 'order')->where(function ($query) {
+                    return $query->where('trip_id', $this->id);
+                })->ignore($this->id),
+            ]
         ];
     }
 }

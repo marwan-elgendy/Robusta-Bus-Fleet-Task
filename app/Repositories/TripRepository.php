@@ -29,7 +29,7 @@ class TripRepository
             ]);
     
             # Create stops
-            foreach($data['stops'] as $stop){
+            foreach($data['trip_stops'] as $stop){
                 TripStop::create([
                     'trip_id'=>$trip->id,
                     'city_id'=>$stop['city_id'],
@@ -66,8 +66,8 @@ class TripRepository
      */
     public function findbyTitle($title)
     {
-        $trip = Trip::where('title', $title)->first();
-        return TripResource::make($trip);
+        $trips = Trip::where('title', 'like', '%'.$title.'%')->get();
+        return TripResource::collection($trips)->response()->getData(true);
     }
 
     /**
@@ -133,24 +133,24 @@ class TripRepository
         $end_city_id = $data['end_city_id'];
         $date = $data['date'];
         # Get all trips that have a stop in the start city
-        $trips = Trip::whereHas('stops', function($query) use ($start_city_id){
+        $trips = Trip::whereHas('tripStops', function($query) use ($start_city_id){
             $query->where('city_id', $start_city_id);
         })
-        ->whereHas('stops', function($query) use ($date){
+        ->whereHas('tripStops', function($query) use ($date){
             $query->where('date', $date);
         })
         # Get all trips that have a stop in the end city
-        ->whereHas('stops', function($query) use ($end_city_id){
+        ->whereHas('tripStops', function($query) use ($end_city_id){
             $query->where('city_id', $end_city_id);
         })
         # Get all trips that have a stop in the start city before the stop in the end city
-        ->whereHas('stops', function($query) use ($start_city_id, $end_city_id){
+        ->whereHas('tripStops', function($query) use ($start_city_id, $end_city_id){
             $query->where('city_id', $start_city_id)->where('order', '<', function($query) use ($end_city_id){
-                $query->select('order')->from('trip_stops')->where('city_id', $end_city_id);
+                $query->selectRaw('MAX(`order`)')->from('trip_stops')->where('city_id', $end_city_id);
             });
         })
         ->get();
-        
+
         return TripResource::collection($trips)->response()->getData(true);
     }
 
