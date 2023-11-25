@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->group(function(){
+Route::middleware('api')->group(function(){
     // Group prefix auth
     Route::group(['prefix' => 'auth'], function () {
         Route::post('login', [\App\Http\Controllers\AuthController::class, 'login'])->name('login');
@@ -45,7 +45,7 @@ Route::middleware('auth:api')->group(function(){
         Route::delete('/trips/{id}', [TripController::class, 'delete'])->name('trips.delete');
 
         // Buses routes
-        Route::get('/buses', [BusController::class, 'index'])->name('buses');
+        Route::get('/buses/{page}', [BusController::class, 'index'])->name('buses');
         Route::get('/buses/{id}', [BusController::class, 'show'])->name('buses.show');
         Route::post('/buses', [BusController::class, 'store'])->name('buses.store');
         Route::put('/buses/{id}', [BusController::class, 'update'])->name('buses.update');
