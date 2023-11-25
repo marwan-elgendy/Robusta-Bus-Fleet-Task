@@ -8,12 +8,18 @@ use App\Repositories\UserRepository;
 class AuthController extends Controller
 {
     /**
+     * @var UserRepository
+     */
+    private $userRepository;
+
+    /**
      * Create a new AuthController instance.
      *
      * @return void
      */
     public function __construct() {
         $this->middleware('auth:api', ['except' => ['login', 'register']]);
+        $this->userRepository = new UserRepository();
     }
     /**
      * Get a JWT via given credentials.
@@ -33,7 +39,7 @@ class AuthController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     public function register(RegisterRequest $request) {
-        $user = (new UserRepository())->create($request->all());
+        $user = $this->userRepository->create($request->all());
         if(!$user){
             return response()->json([
                 'success' => false,

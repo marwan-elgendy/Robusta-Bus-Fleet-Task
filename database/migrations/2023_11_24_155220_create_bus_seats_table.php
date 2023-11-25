@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('seat_number');
             $table->timestamps();
 
-            $table->foreign('bus_id')->references('id')->on('buses');
+            $table->foreign('bus_id')->references('id')->on('buses')->onDelete('cascade');
         });
     }
 

@@ -23,7 +23,7 @@ class Bus extends Model
      */
     public function seats()
     {
-        return $this->hasMany(Seat::class);
+        return $this->hasMany(BusSeat::class);
     }
 
     /**
@@ -44,5 +44,15 @@ class Bus extends Model
     public function trips()
     {
         return $this->hasMany(Trip::class);
+    }
+
+    /**
+     * Count the number of seats for the Bus
+     * 
+     * @return int
+     */
+    public function countSeats()
+    {
+        return $this->seats()->count();
     }
 }

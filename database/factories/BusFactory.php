@@ -17,7 +17,7 @@ class BusFactory extends Factory
     public function definition(): array
     {
         return [
-            'bus_code' => "Bus{$this->faker->numberBetween(1, 15)}",
+            'bus_code' => $this->faker->numerify('BUS###'),
         ];
     }
 }

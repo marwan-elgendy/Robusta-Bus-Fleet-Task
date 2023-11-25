@@ -17,7 +17,7 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!JWTAuth::user()->is_admin == 1) {
+        if (!auth()->user()->is_admin == 1) {
             return response()->json([
                 'message' => 'You don\'t have permission to access this link',
             ], 401);

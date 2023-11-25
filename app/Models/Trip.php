@@ -48,4 +48,14 @@ class Trip extends Model
     {
         return $this->belongsTo(City::class, 'end_city_id');
     }
+
+    /**
+     * Get all of the trip stops for the Trip
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function tripStops()
+    {
+        return $this->hasMany(TripStop::class);
+    }
 }
