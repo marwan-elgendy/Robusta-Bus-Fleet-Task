@@ -1,4 +1,4 @@
-[<img src="robusta.png" alt="robusta" width="500"/>](https://robustastudio.com/)  
+[<p align="center"><img src="robusta.png" alt="robusta" width="500"/></p>](https://robustastudio.com/)  
 
 # Fleet Management System(Bus Management)
 
