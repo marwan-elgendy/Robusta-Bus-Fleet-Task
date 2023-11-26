@@ -85,8 +85,6 @@ class AuthController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     protected function createNewToken($token){
-        $user = auth()->user();
-        $user->token = $token;
         return response()->json([
             'access_token' => $token,
             'token_type' => 'bearer',

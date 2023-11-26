@@ -58,4 +58,39 @@ class Trip extends Model
     {
         return $this->hasMany(TripStop::class);
     }
+
+    /**
+     * Get all of the bookings for the Trip
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
+
+    /**
+     * Get seats available for the Trip on a given date and start stop and end stop
+     * 
+     * @param string $date
+     * @param int $startStopId
+     * @param int $endStopId
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function getAvailableSeats($startStopId, $endStopId)
+    {
+        # Get all bookings for the trip on the given date that start at or before the start stop and end at or after the end stop
+        $bookedSeats = Booking::where('trip_id', $this->id)
+            ->where(function ($query) use ($startStopId, $endStopId) {
+                $query->where(function ($query) use ($startStopId) {
+                    $query->where('start_stop_id', '<=', $startStopId);
+                })->orWhere(function ($query) use ($endStopId) {
+                    $query->where('end_stop_id', '>=', $endStopId);
+                });
+            })->pluck('seat_id');
+
+        return BusSeat::where('bus_id', $this->bus_id)
+            ->whereNotIn('id', $bookedSeats)
+            ->get();
+    }
 }

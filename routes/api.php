@@ -38,6 +38,12 @@ Route::middleware('auth:api')->group(function(){
     Route::get('/trips/{id}', [TripController::class, 'show'])->name('trips.show');
     Route::post('/trips/title', [TripController::class, 'showByTitle'])->name('trips.showByTitle');
     Route::post('/trips/search', [TripController::class, 'search'])->name('trips.search');
+
+    // Bookings routes
+    Route::get('/bookings/my-bookings', [BookingController::class, 'myBookings'])->name('bookings.myBookings');
+    Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
+    Route::post('/bookings/getavailableseats', [BookingController::class, 'getAvailableSeats'])->name('bookings.getAvailableSeats');
+    
     // Group prefix admin
     Route::group(['prefix' => 'admin', 'middleware' => 'is_admin'], function () {
         Route::get('users', [UserController::class, 'index'])->name('users');
@@ -71,17 +77,6 @@ Route::middleware('auth:api')->group(function(){
         // Bookings routes
         Route::get('/bookings', [BookingController::class, 'index'])->name('bookings');
         Route::get('/bookings/{id}', [BookingController::class, 'show'])->name('bookings.show');
-        Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
-        Route::put('/bookings/{id}', [BookingController::class, 'update'])->name('bookings.update');
-        Route::delete('/bookings/{id}', [BookingController::class, 'destroy'])->name('bookings.delete');
-        
-        // // TripStops routes
-        // Route::get('/trip-stops', [TripStopController::class, 'index'])->name('trip-stops');
-        // Route::get('/trip-stops/{id}', [TripStopController::class, 'show'])->name('trip-stops.show');
-        // Route::post('/trip-stops', [TripStopController::class, 'store'])->name('trip-stops.store');
-        // Route::put('/trip-stops/{id}', [TripStopController::class, 'update'])->name('trip-stops.update');
-        // Route::delete('/trip-stops/{id}', [TripStopController::class, 'destroy'])->name('trip-stops.delete');
-        
     });
 });
 
