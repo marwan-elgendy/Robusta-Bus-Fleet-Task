@@ -101,25 +101,6 @@ class BookingController extends Controller
         ], 200);
     }
 
-    /**
-     * @param string $code
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function showByCode($code)
-    {
-        $booking = $this->bookingRepository->findByCode($code);
-        if(!$booking){
-            return response()->json([
-                'success' => false,
-                'message' => 'Sorry, booking not found'
-            ], 400);
-        }
-        return response()->json([
-            'success' => true,
-            'data' => $booking
-        ], 200);
-    }
-
     public function getAvailableSeats(GetAvailableSeatsRequest $request)
     {
         $trip_id = $request->trip_id;
