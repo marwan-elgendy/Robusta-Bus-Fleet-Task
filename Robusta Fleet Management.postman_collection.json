@@ -24,20 +24,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/auth/register",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"auth",
-								"register"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/auth/register",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "auth", "register"]
+                        }
 					},
 					"response": []
 				},
@@ -56,20 +47,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/auth/login",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"auth",
-								"login"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/auth/login",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "auth", "login"]
+                        }
 					},
 					"response": []
 				},
@@ -95,20 +77,11 @@
 							}
 						],
 						"url": {
-							"raw": "127.0.0.1:8000/api/auth/logout",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"auth",
-								"logout"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/auth/logout",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "auth", "logout"]
+                        }
 					},
 					"response": []
 				},
@@ -127,20 +100,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/auth/refresh",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"auth",
-								"refresh"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/auth/refresh",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "auth", "refresh"]
+                        }
 					},
 					"response": []
 				},
@@ -160,20 +124,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/auth/user-profile",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"auth",
-								"user-profile"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/auth/user-profile",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "auth", "user-profile"]
+                        }
 					},
 					"response": []
 				}
@@ -207,138 +162,111 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/buses?page=*",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"buses"
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "*"
-										}
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/buses?page=*",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "buses"],
+                                    "query": [
+                                        {
+                                            "key": "page",
+                                            "value": "*"
+                                        }
+                                    ]
+                                }
 							},
 							"response": [
 								{
-									"name": "Get Paginate",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses?page=1",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses"
-											],
-											"query": [
-												{
-													"key": "page",
-													"value": "1"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 25 Nov 2023 19:22:06 GMT"
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 25 Nov 2023 19:22:06 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "close"
-										},
-										{
-											"key": "X-Powered-By",
-											"value": "PHP/8.2.0"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, private"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "X-RateLimit-Limit",
-											"value": "60"
-										},
-										{
-											"key": "X-RateLimit-Remaining",
-											"value": "59"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"bus_code\": \"BUS561\",\n                \"total_seats\": 12,\n                \"created_at\": \"2023-11-25 17:07:44\",\n                \"updated_at\": \"2023-11-25 17:07:44\"\n            },\n            {\n                \"id\": 2,\n                \"bus_code\": \"BUS980\",\n                \"total_seats\": 12,\n                \"created_at\": \"2023-11-25 17:07:44\",\n                \"updated_at\": \"2023-11-25 17:07:44\"\n            },\n            {\n                \"id\": 3,\n                \"bus_code\": \"BUS177\",\n                \"total_seats\": 12,\n                \"created_at\": \"2023-11-25 17:07:44\",\n                \"updated_at\": \"2023-11-25 17:07:44\"\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://127.0.0.1:8000/api/admin/buses?page=1\",\n            \"last\": \"http://127.0.0.1:8000/api/admin/buses?page=4\",\n            \"prev\": null,\n            \"next\": \"http://127.0.0.1:8000/api/admin/buses?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 4,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/buses?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/buses?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/buses?page=3\",\n                    \"label\": \"3\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/buses?page=4\",\n                    \"label\": \"4\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/buses?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://127.0.0.1:8000/api/admin/buses\",\n            \"per_page\": 3,\n            \"to\": 3,\n            \"total\": 10\n        }\n    }\n}"
-								},
+                                    "name": "Get Paginate",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "0.0.0.0:80/api/admin/buses?page=1",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "buses"],
+                                            "query": [
+                                                {
+                                                    "key": "page",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "json",
+                                    "header": [
+                                        {
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
+                                        {
+                                            "key": "Date",
+                                            "value": "Sat, 25 Nov 2023 19:22:06 GMT"
+                                        },
+                                        {
+                                            "key": "Date",
+                                            "value": "Sat, 25 Nov 2023 19:22:06 GMT"
+                                        },
+                                        {
+                                            "key": "Connection",
+                                            "value": "close"
+                                        },
+                                        {
+                                            "key": "X-Powered-By",
+                                            "value": "PHP/8.2.0"
+                                        },
+                                        {
+                                            "key": "Cache-Control",
+                                            "value": "no-cache, private"
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        },
+                                        {
+                                            "key": "X-RateLimit-Limit",
+                                            "value": "60"
+                                        },
+                                        {
+                                            "key": "X-RateLimit-Remaining",
+                                            "value": "59"
+                                        },
+                                        {
+                                            "key": "Access-Control-Allow-Origin",
+                                            "value": "*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"bus_code\": \"BUS561\",\n                \"total_seats\": 12,\n                \"created_at\": \"2023-11-25 17:07:44\",\n                \"updated_at\": \"2023-11-25 17:07:44\"\n            },\n            {\n                \"id\": 2,\n                \"bus_code\": \"BUS980\",\n                \"total_seats\": 12,\n                \"created_at\": \"2023-11-25 17:07:44\",\n                \"updated_at\": \"2023-11-25 17:07:44\"\n            },\n            {\n                \"id\": 3,\n                \"bus_code\": \"BUS177\",\n                \"total_seats\": 12,\n                \"created_at\": \"2023-11-25 17:07:44\",\n                \"updated_at\": \"2023-11-25 17:07:44\"\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://0.0.0.0:80/api/admin/buses?page=1\",\n            \"last\": \"http://0.0.0.0:80/api/admin/buses?page=4\",\n            \"prev\": null,\n            \"next\": \"http://0.0.0.0:80/api/admin/buses?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 4,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/buses?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/buses?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/buses?page=3\",\n                    \"label\": \"3\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/buses?page=4\",\n                    \"label\": \"4\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/buses?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://0.0.0.0:80/api/admin/buses\",\n            \"per_page\": 3,\n            \"to\": 3,\n            \"total\": 10\n        }\n    }\n}"
+                                },
 								{
 									"name": "Get Paginate",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses?page=*",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses"
-											],
-											"query": [
-												{
-													"key": "page",
-													"value": "*"
-												}
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/buses?page=*",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "buses"],
+                                            "query": [
+                                                {
+                                                    "key": "page",
+                                                    "value": "*"
+                                                }
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:22:22 GMT"
@@ -403,21 +331,11 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/buses/11",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"buses",
-										"11"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/buses/11",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "buses", "11"]
+                                }
 							},
 							"response": [
 								{
@@ -426,30 +344,25 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses/1",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses",
-												"1"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/buses/1",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "buses",
+                                                "1"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 18:24:01 GMT"
@@ -496,30 +409,25 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses/12",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses",
-												"12"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/buses/12",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "buses",
+                                                "12"
+                                            ]
+                                        }
 									},
 									"status": "Bad Request",
 									"code": 400,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:22:49 GMT"
@@ -584,22 +492,17 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/buses/code/BUS5612",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"buses",
-										"code",
-										"BUS5612"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/buses/code/BUS5612",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": [
+                                        "api",
+                                        "admin",
+                                        "buses",
+                                        "code",
+                                        "BUS5612"
+                                    ]
+                                }
 							},
 							"response": [
 								{
@@ -608,31 +511,26 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses/code/BUS561",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses",
-												"code",
-												"BUS561"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/buses/code/BUS561",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "buses",
+                                                "code",
+                                                "BUS561"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 18:27:10 GMT"
@@ -679,31 +577,26 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses/code/BUS5612",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses",
-												"code",
-												"BUS5612"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/buses/code/BUS5612",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "buses",
+                                                "code",
+                                                "BUS5612"
+                                            ]
+                                        }
 									},
 									"status": "Bad Request",
 									"code": 400,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:23:58 GMT"
@@ -777,20 +670,11 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/buses",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"buses"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/buses",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "buses"]
+                                }
 							},
 							"response": [
 								{
@@ -814,29 +698,20 @@
 											}
 										},
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/buses",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "buses"]
+                                        }
 									},
 									"status": "Unprocessable Content",
 									"code": 422,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:40:06 GMT"
@@ -898,29 +773,20 @@
 											}
 										},
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/buses",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "buses"]
+                                        }
 									},
 									"status": "Created",
 									"code": 201,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:40:48 GMT"
@@ -994,21 +860,11 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/buses/11",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"buses",
-										"11"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/buses/11",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "buses", "11"]
+                                }
 							},
 							"response": [
 								{
@@ -1026,30 +882,25 @@
 											}
 										},
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses/11",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses",
-												"11"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/buses/11",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "buses",
+                                                "11"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:45:01 GMT"
@@ -1114,21 +965,11 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/buses/11",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"buses",
-										"11"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/buses/11",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "buses", "11"]
+                                }
 							},
 							"response": [
 								{
@@ -1137,30 +978,25 @@
 										"method": "DELETE",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/buses/11",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"buses",
-												"11"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/buses/11",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "buses",
+                                                "11"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:50:26 GMT"
@@ -1230,138 +1066,119 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/bookings?page=*",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"bookings"
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "*"
-										}
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/bookings?page=*",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "bookings"],
+                                    "query": [
+                                        {
+                                            "key": "page",
+                                            "value": "*"
+                                        }
+                                    ]
+                                }
 							},
 							"response": [
 								{
-									"name": "Get Paginate First Page",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "127.0.0.1:8000/api/admin/bookings?page=1",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"bookings"
-											],
-											"query": [
-												{
-													"key": "page",
-													"value": "1"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
-										{
-											"key": "Date",
-											"value": "Sun, 26 Nov 2023 00:42:06 GMT"
-										},
-										{
-											"key": "Date",
-											"value": "Sun, 26 Nov 2023 00:42:06 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "close"
-										},
-										{
-											"key": "X-Powered-By",
-											"value": "PHP/8.2.0"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, private"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "X-RateLimit-Limit",
-											"value": "60"
-										},
-										{
-											"key": "X-RateLimit-Remaining",
-											"value": "59"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"trip_id\": 1,\n                \"user_id\": 1,\n                \"seat_id\": 1,\n                \"start_stop_id\": 1,\n                \"end_stop_id\": 3,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 2,\n                \"trip_id\": 3,\n                \"user_id\": 2,\n                \"seat_id\": 10,\n                \"start_stop_id\": 1,\n                \"end_stop_id\": 7,\n                \"created_at\": null,\n                \"updated_at\": null\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://127.0.0.1:8000/api/admin/bookings?page=1\",\n            \"last\": \"http://127.0.0.1:8000/api/admin/bookings?page=1\",\n            \"prev\": null,\n            \"next\": null\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 1,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/bookings?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": null,\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://127.0.0.1:8000/api/admin/bookings\",\n            \"per_page\": 3,\n            \"to\": 2,\n            \"total\": 2\n        }\n    }\n}"
-								},
+                                    "name": "Get Paginate First Page",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "0.0.0.0:80/api/admin/bookings?page=1",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "bookings"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "page",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "json",
+                                    "header": [
+                                        {
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
+                                        {
+                                            "key": "Date",
+                                            "value": "Sun, 26 Nov 2023 00:42:06 GMT"
+                                        },
+                                        {
+                                            "key": "Date",
+                                            "value": "Sun, 26 Nov 2023 00:42:06 GMT"
+                                        },
+                                        {
+                                            "key": "Connection",
+                                            "value": "close"
+                                        },
+                                        {
+                                            "key": "X-Powered-By",
+                                            "value": "PHP/8.2.0"
+                                        },
+                                        {
+                                            "key": "Cache-Control",
+                                            "value": "no-cache, private"
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        },
+                                        {
+                                            "key": "X-RateLimit-Limit",
+                                            "value": "60"
+                                        },
+                                        {
+                                            "key": "X-RateLimit-Remaining",
+                                            "value": "59"
+                                        },
+                                        {
+                                            "key": "Access-Control-Allow-Origin",
+                                            "value": "*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"trip_id\": 1,\n                \"user_id\": 1,\n                \"seat_id\": 1,\n                \"start_stop_id\": 1,\n                \"end_stop_id\": 3,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 2,\n                \"trip_id\": 3,\n                \"user_id\": 2,\n                \"seat_id\": 10,\n                \"start_stop_id\": 1,\n                \"end_stop_id\": 7,\n                \"created_at\": null,\n                \"updated_at\": null\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://0.0.0.0:80/api/admin/bookings?page=1\",\n            \"last\": \"http://0.0.0.0:80/api/admin/bookings?page=1\",\n            \"prev\": null,\n            \"next\": null\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 1,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/bookings?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": null,\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://0.0.0.0:80/api/admin/bookings\",\n            \"per_page\": 3,\n            \"to\": 2,\n            \"total\": 2\n        }\n    }\n}"
+                                },
 								{
 									"name": "Get Paginate All Pages",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/bookings?page=*",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"bookings"
-											],
-											"query": [
-												{
-													"key": "page",
-													"value": "*"
-												}
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/bookings?page=*",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "bookings"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "page",
+                                                    "value": "*"
+                                                }
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sun, 26 Nov 2023 00:43:19 GMT"
@@ -1426,21 +1243,11 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/bookings/11",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"bookings",
-										"11"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/bookings/11",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "bookings", "11"]
+                                }
 							},
 							"response": [
 								{
@@ -1449,30 +1256,25 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/bookings/1",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"bookings",
-												"1"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/bookings/1",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "bookings",
+                                                "1"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sun, 26 Nov 2023 00:44:14 GMT"
@@ -1519,30 +1321,25 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/bookings/11",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"bookings",
-												"11"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/bookings/11",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "bookings",
+                                                "11"
+                                            ]
+                                        }
 									},
 									"status": "Bad Request",
 									"code": 400,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sun, 26 Nov 2023 00:44:40 GMT"
@@ -1612,26 +1409,17 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/cities?page=1",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"cities"
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "1"
-										}
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/cities?page=1",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "cities"],
+                                    "query": [
+                                        {
+                                            "key": "page",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
 							},
 							"response": [
 								{
@@ -1640,35 +1428,26 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/cities?page=*",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"cities"
-											],
-											"query": [
-												{
-													"key": "page",
-													"value": "*"
-												}
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/cities?page=*",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "cities"],
+                                            "query": [
+                                                {
+                                                    "key": "page",
+                                                    "value": "*"
+                                                }
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:11:47 GMT"
@@ -1710,80 +1489,71 @@
 									"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Cairo\",\n            \"created_at\": \"\",\n            \"updated_at\": \"\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Giza\",\n            \"created_at\": \"\",\n            \"updated_at\": \"\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"AlFayyum\",\n            \"created_at\": \"\",\n            \"updated_at\": \"\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"AlMinya\",\n            \"created_at\": \"\",\n            \"updated_at\": \"\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Asyut\",\n            \"created_at\": \"\",\n            \"updated_at\": \"\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Luxor\",\n            \"created_at\": \"\",\n            \"updated_at\": \"\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Aswan\",\n            \"created_at\": \"\",\n            \"updated_at\": \"\"\n        }\n    ]\n}"
 								},
 								{
-									"name": "Get Paginate First Page",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "127.0.0.1:8000/api/admin/cities?page=1",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"cities"
-											],
-											"query": [
-												{
-													"key": "page",
-													"value": "1"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 25 Nov 2023 19:13:20 GMT"
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 25 Nov 2023 19:13:20 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "close"
-										},
-										{
-											"key": "X-Powered-By",
-											"value": "PHP/8.2.0"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, private"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "X-RateLimit-Limit",
-											"value": "60"
-										},
-										{
-											"key": "X-RateLimit-Remaining",
-											"value": "58"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Cairo\",\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Giza\",\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"AlFayyum\",\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://127.0.0.1:8000/api/admin/cities?page=1\",\n            \"last\": \"http://127.0.0.1:8000/api/admin/cities?page=3\",\n            \"prev\": null,\n            \"next\": \"http://127.0.0.1:8000/api/admin/cities?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 3,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/cities?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/cities?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/cities?page=3\",\n                    \"label\": \"3\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/cities?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://127.0.0.1:8000/api/admin/cities\",\n            \"per_page\": 3,\n            \"to\": 3,\n            \"total\": 8\n        }\n    }\n}"
-								}
+                                    "name": "Get Paginate First Page",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "0.0.0.0:80/api/admin/cities?page=1",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "cities"],
+                                            "query": [
+                                                {
+                                                    "key": "page",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "json",
+                                    "header": [
+                                        {
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
+                                        {
+                                            "key": "Date",
+                                            "value": "Sat, 25 Nov 2023 19:13:20 GMT"
+                                        },
+                                        {
+                                            "key": "Date",
+                                            "value": "Sat, 25 Nov 2023 19:13:20 GMT"
+                                        },
+                                        {
+                                            "key": "Connection",
+                                            "value": "close"
+                                        },
+                                        {
+                                            "key": "X-Powered-By",
+                                            "value": "PHP/8.2.0"
+                                        },
+                                        {
+                                            "key": "Cache-Control",
+                                            "value": "no-cache, private"
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        },
+                                        {
+                                            "key": "X-RateLimit-Limit",
+                                            "value": "60"
+                                        },
+                                        {
+                                            "key": "X-RateLimit-Remaining",
+                                            "value": "58"
+                                        },
+                                        {
+                                            "key": "Access-Control-Allow-Origin",
+                                            "value": "*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Cairo\",\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Giza\",\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"AlFayyum\",\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://0.0.0.0:80/api/admin/cities?page=1\",\n            \"last\": \"http://0.0.0.0:80/api/admin/cities?page=3\",\n            \"prev\": null,\n            \"next\": \"http://0.0.0.0:80/api/admin/cities?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 3,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/cities?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/cities?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/cities?page=3\",\n                    \"label\": \"3\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/cities?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://0.0.0.0:80/api/admin/cities\",\n            \"per_page\": 3,\n            \"to\": 3,\n            \"total\": 8\n        }\n    }\n}"
+                                }
 							]
 						},
 						{
@@ -1808,21 +1578,11 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/cities/8",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"cities",
-										"8"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/cities/8",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "cities", "8"]
+                                }
 							},
 							"response": [
 								{
@@ -1831,30 +1591,25 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/cities/1",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"cities",
-												"1"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/cities/1",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "cities",
+                                                "1"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:11:56 GMT"
@@ -1901,30 +1656,25 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/cities/8",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"cities",
-												"8"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/cities/8",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "cities",
+                                                "8"
+                                            ]
+                                        }
 									},
 									"status": "Not Found",
 									"code": 404,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:20:17 GMT"
@@ -1989,22 +1739,17 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/cities/name/Cairo",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"cities",
-										"name",
-										"Cairo"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/cities/name/Cairo",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": [
+                                        "api",
+                                        "admin",
+                                        "cities",
+                                        "name",
+                                        "Cairo"
+                                    ]
+                                }
 							},
 							"response": [
 								{
@@ -2013,31 +1758,26 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/cities/name/Cairo",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"cities",
-												"name",
-												"Cairo"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/cities/name/Cairo",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "cities",
+                                                "name",
+                                                "Cairo"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:12:13 GMT"
@@ -2111,20 +1851,11 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/cities",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"cities"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/cities",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "cities"]
+                                }
 							},
 							"response": [
 								{
@@ -2142,29 +1873,20 @@
 											}
 										},
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/cities",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"cities"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/cities",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "cities"]
+                                        }
 									},
 									"status": "Created",
 									"code": 201,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:12:44 GMT"
@@ -2238,21 +1960,11 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/cities/8",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"cities",
-										"8"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/cities/8",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "cities", "8"]
+                                }
 							},
 							"response": [
 								{
@@ -2270,30 +1982,25 @@
 											}
 										},
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/cities/8",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"cities",
-												"8"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/cities/8",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "cities",
+                                                "8"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:14:41 GMT"
@@ -2358,21 +2065,11 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/cities/8",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"cities",
-										"8"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/cities/8",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "cities", "8"]
+                                }
 							},
 							"response": [
 								{
@@ -2381,30 +2078,25 @@
 										"method": "DELETE",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/cities/8",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"cities",
-												"8"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/cities/8",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "cities",
+                                                "8"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 19:16:11 GMT"
@@ -2474,138 +2166,111 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/users?page=*",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"users"
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "*"
-										}
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/users?page=*",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "users"],
+                                    "query": [
+                                        {
+                                            "key": "page",
+                                            "value": "*"
+                                        }
+                                    ]
+                                }
 							},
 							"response": [
 								{
-									"name": "Get Paginate All Pages",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "127.0.0.1:8000/api/admin/users?page=1",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"users"
-											],
-											"query": [
-												{
-													"key": "page",
-													"value": "1"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 25 Nov 2023 21:10:36 GMT"
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 25 Nov 2023 21:10:36 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "close"
-										},
-										{
-											"key": "X-Powered-By",
-											"value": "PHP/8.2.0"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, private"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "X-RateLimit-Limit",
-											"value": "60"
-										},
-										{
-											"key": "X-RateLimit-Remaining",
-											"value": "58"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										}
-									],
-									"cookie": [],
-									"body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Marwan Elgendy\",\n                \"email\": \"marwanelgendy@gmail.com\",\n                \"token\": null\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Test User\",\n                \"email\": \"testuser@gmail.com\",\n                \"token\": null\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Test User2\",\n                \"email\": \"testuser2@gmail.com\",\n                \"token\": null\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://127.0.0.1:8000/api/admin/users?page=1\",\n            \"last\": \"http://127.0.0.1:8000/api/admin/users?page=2\",\n            \"prev\": null,\n            \"next\": \"http://127.0.0.1:8000/api/admin/users?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 2,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/users?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/users?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/users?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://127.0.0.1:8000/api/admin/users\",\n            \"per_page\": 3,\n            \"to\": 3,\n            \"total\": 4\n        }\n    }\n}"
-								},
+                                    "name": "Get Paginate All Pages",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "0.0.0.0:80/api/admin/users?page=1",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "users"],
+                                            "query": [
+                                                {
+                                                    "key": "page",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "json",
+                                    "header": [
+                                        {
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
+                                        {
+                                            "key": "Date",
+                                            "value": "Sat, 25 Nov 2023 21:10:36 GMT"
+                                        },
+                                        {
+                                            "key": "Date",
+                                            "value": "Sat, 25 Nov 2023 21:10:36 GMT"
+                                        },
+                                        {
+                                            "key": "Connection",
+                                            "value": "close"
+                                        },
+                                        {
+                                            "key": "X-Powered-By",
+                                            "value": "PHP/8.2.0"
+                                        },
+                                        {
+                                            "key": "Cache-Control",
+                                            "value": "no-cache, private"
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        },
+                                        {
+                                            "key": "X-RateLimit-Limit",
+                                            "value": "60"
+                                        },
+                                        {
+                                            "key": "X-RateLimit-Remaining",
+                                            "value": "58"
+                                        },
+                                        {
+                                            "key": "Access-Control-Allow-Origin",
+                                            "value": "*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Marwan Elgendy\",\n                \"email\": \"marwanelgendy@gmail.com\",\n                \"token\": null\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Test User\",\n                \"email\": \"testuser@gmail.com\",\n                \"token\": null\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Test User2\",\n                \"email\": \"testuser2@gmail.com\",\n                \"token\": null\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://0.0.0.0:80/api/admin/users?page=1\",\n            \"last\": \"http://0.0.0.0:80/api/admin/users?page=2\",\n            \"prev\": null,\n            \"next\": \"http://0.0.0.0:80/api/admin/users?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 2,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/users?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/users?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/users?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://0.0.0.0:80/api/admin/users\",\n            \"per_page\": 3,\n            \"to\": 3,\n            \"total\": 4\n        }\n    }\n}"
+                                },
 								{
 									"name": "Get Paginate First Page",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/users?page=*",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"users"
-											],
-											"query": [
-												{
-													"key": "page",
-													"value": "*"
-												}
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/users?page=*",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "users"],
+                                            "query": [
+                                                {
+                                                    "key": "page",
+                                                    "value": "*"
+                                                }
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 21:11:13 GMT"
@@ -2670,21 +2335,11 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/users/15",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"users",
-										"15"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/users/15",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "users", "15"]
+                                }
 							},
 							"response": [
 								{
@@ -2693,30 +2348,25 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/users/1",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"users",
-												"1"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/users/1",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "users",
+                                                "1"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 21:12:17 GMT"
@@ -2763,30 +2413,25 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/users/15",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"users",
-												"15"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/users/15",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "users",
+                                                "15"
+                                            ]
+                                        }
 									},
 									"status": "Not Found",
 									"code": 404,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 21:13:56 GMT"
@@ -2860,21 +2505,11 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/users/name",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"users",
-										"name"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/users/name",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "users", "name"]
+                                }
 							},
 							"response": [
 								{
@@ -2892,30 +2527,25 @@
 											}
 										},
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/users/name",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"users",
-												"name"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/users/name",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "users",
+                                                "name"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 21:16:56 GMT"
@@ -2989,21 +2619,11 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/users/email",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"users",
-										"email"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/users/email",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "users", "email"]
+                                }
 							},
 							"response": [
 								{
@@ -3021,30 +2641,25 @@
 											}
 										},
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/users/email",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"users",
-												"email"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/users/email",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": [
+                                                "api",
+                                                "admin",
+                                                "users",
+                                                "email"
+                                            ]
+                                        }
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 21:18:42 GMT"
@@ -3108,20 +2723,11 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/users",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"users"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/users",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "users"]
+                                }
 							},
 							"response": []
 						},
@@ -3156,21 +2762,11 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/users/8",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"users",
-										"8"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/users/8",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "users", "8"]
+                                }
 							},
 							"response": []
 						},
@@ -3196,21 +2792,11 @@
 									}
 								],
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/users/8",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"users",
-										"8"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/users/8",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "users", "8"]
+                                }
 							},
 							"response": []
 						}
@@ -3250,20 +2836,11 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/admin/trips",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"trips"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/admin/trips",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "trips"]
+                                }
 							},
 							"response": [
 								{
@@ -3287,29 +2864,20 @@
 											}
 										},
 										"url": {
-											"raw": "127.0.0.1:8000/api/admin/trips",
-											"host": [
-												"127",
-												"0",
-												"0",
-												"1"
-											],
-											"port": "8000",
-											"path": [
-												"api",
-												"admin",
-												"trips"
-											]
-										}
+                                            "raw": "0.0.0.0:80/api/admin/trips",
+                                            "host": ["127", "0", "0", "1"],
+                                            "port": "8000",
+                                            "path": ["api", "admin", "trips"]
+                                        }
 									},
 									"status": "Created",
 									"code": 201,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"key": "Host",
-											"value": "127.0.0.1:8000"
-										},
+                                            "key": "Host",
+                                            "value": "0.0.0.0:80"
+                                        },
 										{
 											"key": "Date",
 											"value": "Sat, 25 Nov 2023 22:57:39 GMT"
@@ -3381,136 +2949,111 @@
 							}
 						],
 						"url": {
-							"raw": "127.0.0.1:8000/api/trips?page=*",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"trips"
-							],
-							"query": [
-								{
-									"key": "page",
-									"value": "*"
-								}
-							]
-						}
+                            "raw": "0.0.0.0:80/api/trips?page=*",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "trips"],
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "*"
+                                }
+                            ]
+                        }
 					},
 					"response": [
 						{
-							"name": "Get Paginate First Page",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "127.0.0.1:8000/api/admin/trips?page=1",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"admin",
-										"trips"
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "1"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
-								{
-									"key": "Date",
-									"value": "Sat, 25 Nov 2023 21:24:48 GMT"
-								},
-								{
-									"key": "Date",
-									"value": "Sat, 25 Nov 2023 21:24:48 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "close"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "PHP/8.2.0"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "no-cache, private"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "X-RateLimit-Limit",
-									"value": "60"
-								},
-								{
-									"key": "X-RateLimit-Remaining",
-									"value": "58"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"title\": \"Cairo to Luxor\",\n                \"bus\": {\n                    \"id\": 1,\n                    \"bus_code\": \"BUS561\",\n                    \"created_at\": \"2023-11-25T17:07:44.000000Z\",\n                    \"updated_at\": \"2023-11-25T17:07:44.000000Z\"\n                },\n                \"start_city\": {\n                    \"id\": 1,\n                    \"name\": \"Cairo\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"end_city\": {\n                    \"id\": 6,\n                    \"name\": \"Luxor\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"trip_stops\": [\n                    {\n                        \"id\": 1,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 1,\n                            \"name\": \"Cairo\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 1,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"10:00:00\",\n                        \"arrival_time\": \"12:00:00\",\n                        \"cost\": 0,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 2,\n                            \"name\": \"Giza\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 2,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"12:00:00\",\n                        \"arrival_time\": \"14:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 3,\n                            \"name\": \"AlFayyum\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 3,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"14:00:00\",\n                        \"arrival_time\": \"16:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 4,\n                            \"name\": \"AlMinya\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 4,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"16:00:00\",\n                        \"arrival_time\": \"18:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 5,\n                            \"name\": \"Asyut\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 5,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"18:00:00\",\n                        \"arrival_time\": \"20:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 6,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 6,\n                            \"name\": \"Luxor\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 6,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"20:00:00\",\n                        \"arrival_time\": \"22:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    }\n                ],\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            },\n            {\n                \"id\": 2,\n                \"title\": \"Cairo to Aswan\",\n                \"bus\": {\n                    \"id\": 2,\n                    \"bus_code\": \"BUS980\",\n                    \"created_at\": \"2023-11-25T17:07:44.000000Z\",\n                    \"updated_at\": \"2023-11-25T17:07:44.000000Z\"\n                },\n                \"start_city\": {\n                    \"id\": 1,\n                    \"name\": \"Cairo\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"end_city\": {\n                    \"id\": 7,\n                    \"name\": \"Aswan\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"trip_stops\": [\n                    {\n                        \"id\": 7,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 1,\n                            \"name\": \"Cairo\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 1,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"10:00:00\",\n                        \"arrival_time\": \"12:00:00\",\n                        \"cost\": 0,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 8,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 2,\n                            \"name\": \"Giza\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 2,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"12:00:00\",\n                        \"arrival_time\": \"14:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 9,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 3,\n                            \"name\": \"AlFayyum\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 3,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"14:00:00\",\n                        \"arrival_time\": \"16:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 10,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 4,\n                            \"name\": \"AlMinya\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 4,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"16:00:00\",\n                        \"arrival_time\": \"18:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 11,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 5,\n                            \"name\": \"Asyut\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 5,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"18:00:00\",\n                        \"arrival_time\": \"20:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 12,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 6,\n                            \"name\": \"Luxor\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 6,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"20:00:00\",\n                        \"arrival_time\": \"22:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 13,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 7,\n                            \"name\": \"Aswan\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 7,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"22:00:00\",\n                        \"arrival_time\": \"24:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    }\n                ],\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            },\n            {\n                \"id\": 3,\n                \"title\": \"Cairo Straight to Aswan\",\n                \"bus\": {\n                    \"id\": 3,\n                    \"bus_code\": \"BUS177\",\n                    \"created_at\": \"2023-11-25T17:07:44.000000Z\",\n                    \"updated_at\": \"2023-11-25T17:07:44.000000Z\"\n                },\n                \"start_city\": {\n                    \"id\": 1,\n                    \"name\": \"Cairo\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"end_city\": {\n                    \"id\": 7,\n                    \"name\": \"Aswan\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"trip_stops\": [\n                    {\n                        \"id\": 14,\n                        \"trip_id\": 3,\n                        \"city\": {\n                            \"id\": 1,\n                            \"name\": \"Cairo\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 1,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"10:00:00\",\n                        \"arrival_time\": \"12:00:00\",\n                        \"cost\": 0,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 15,\n                        \"trip_id\": 3,\n                        \"city\": {\n                            \"id\": 7,\n                            \"name\": \"Aswan\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 2,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"12:00:00\",\n                        \"arrival_time\": \"14:00:00\",\n                        \"cost\": 400,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    }\n                ],\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://127.0.0.1:8000/api/admin/trips?page=1\",\n            \"last\": \"http://127.0.0.1:8000/api/admin/trips?page=2\",\n            \"prev\": null,\n            \"next\": \"http://127.0.0.1:8000/api/admin/trips?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 2,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/trips?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/trips?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/admin/trips?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://127.0.0.1:8000/api/admin/trips\",\n            \"per_page\": 3,\n            \"to\": 3,\n            \"total\": 4\n        }\n    }\n}"
-						},
+                            "name": "Get Paginate First Page",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "0.0.0.0:80/api/admin/trips?page=1",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "admin", "trips"],
+                                    "query": [
+                                        {
+                                            "key": "page",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Sat, 25 Nov 2023 21:24:48 GMT"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Sat, 25 Nov 2023 21:24:48 GMT"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "close"
+                                },
+                                {
+                                    "key": "X-Powered-By",
+                                    "value": "PHP/8.2.0"
+                                },
+                                {
+                                    "key": "Cache-Control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                },
+                                {
+                                    "key": "X-RateLimit-Limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "X-RateLimit-Remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "Access-Control-Allow-Origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"title\": \"Cairo to Luxor\",\n                \"bus\": {\n                    \"id\": 1,\n                    \"bus_code\": \"BUS561\",\n                    \"created_at\": \"2023-11-25T17:07:44.000000Z\",\n                    \"updated_at\": \"2023-11-25T17:07:44.000000Z\"\n                },\n                \"start_city\": {\n                    \"id\": 1,\n                    \"name\": \"Cairo\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"end_city\": {\n                    \"id\": 6,\n                    \"name\": \"Luxor\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"trip_stops\": [\n                    {\n                        \"id\": 1,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 1,\n                            \"name\": \"Cairo\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 1,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"10:00:00\",\n                        \"arrival_time\": \"12:00:00\",\n                        \"cost\": 0,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 2,\n                            \"name\": \"Giza\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 2,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"12:00:00\",\n                        \"arrival_time\": \"14:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 3,\n                            \"name\": \"AlFayyum\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 3,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"14:00:00\",\n                        \"arrival_time\": \"16:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 4,\n                            \"name\": \"AlMinya\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 4,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"16:00:00\",\n                        \"arrival_time\": \"18:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 5,\n                            \"name\": \"Asyut\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 5,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"18:00:00\",\n                        \"arrival_time\": \"20:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 6,\n                        \"trip_id\": 1,\n                        \"city\": {\n                            \"id\": 6,\n                            \"name\": \"Luxor\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 6,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"20:00:00\",\n                        \"arrival_time\": \"22:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    }\n                ],\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            },\n            {\n                \"id\": 2,\n                \"title\": \"Cairo to Aswan\",\n                \"bus\": {\n                    \"id\": 2,\n                    \"bus_code\": \"BUS980\",\n                    \"created_at\": \"2023-11-25T17:07:44.000000Z\",\n                    \"updated_at\": \"2023-11-25T17:07:44.000000Z\"\n                },\n                \"start_city\": {\n                    \"id\": 1,\n                    \"name\": \"Cairo\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"end_city\": {\n                    \"id\": 7,\n                    \"name\": \"Aswan\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"trip_stops\": [\n                    {\n                        \"id\": 7,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 1,\n                            \"name\": \"Cairo\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 1,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"10:00:00\",\n                        \"arrival_time\": \"12:00:00\",\n                        \"cost\": 0,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 8,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 2,\n                            \"name\": \"Giza\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 2,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"12:00:00\",\n                        \"arrival_time\": \"14:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 9,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 3,\n                            \"name\": \"AlFayyum\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 3,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"14:00:00\",\n                        \"arrival_time\": \"16:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 10,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 4,\n                            \"name\": \"AlMinya\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 4,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"16:00:00\",\n                        \"arrival_time\": \"18:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 11,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 5,\n                            \"name\": \"Asyut\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 5,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"18:00:00\",\n                        \"arrival_time\": \"20:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 12,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 6,\n                            \"name\": \"Luxor\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 6,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"20:00:00\",\n                        \"arrival_time\": \"22:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 13,\n                        \"trip_id\": 2,\n                        \"city\": {\n                            \"id\": 7,\n                            \"name\": \"Aswan\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 7,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"22:00:00\",\n                        \"arrival_time\": \"24:00:00\",\n                        \"cost\": 50,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    }\n                ],\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            },\n            {\n                \"id\": 3,\n                \"title\": \"Cairo Straight to Aswan\",\n                \"bus\": {\n                    \"id\": 3,\n                    \"bus_code\": \"BUS177\",\n                    \"created_at\": \"2023-11-25T17:07:44.000000Z\",\n                    \"updated_at\": \"2023-11-25T17:07:44.000000Z\"\n                },\n                \"start_city\": {\n                    \"id\": 1,\n                    \"name\": \"Cairo\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"end_city\": {\n                    \"id\": 7,\n                    \"name\": \"Aswan\",\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"trip_stops\": [\n                    {\n                        \"id\": 14,\n                        \"trip_id\": 3,\n                        \"city\": {\n                            \"id\": 1,\n                            \"name\": \"Cairo\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 1,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"10:00:00\",\n                        \"arrival_time\": \"12:00:00\",\n                        \"cost\": 0,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    },\n                    {\n                        \"id\": 15,\n                        \"trip_id\": 3,\n                        \"city\": {\n                            \"id\": 7,\n                            \"name\": \"Aswan\",\n                            \"created_at\": null,\n                            \"updated_at\": null\n                        },\n                        \"order\": 2,\n                        \"date\": \"2023-11-25\",\n                        \"departure_time\": \"12:00:00\",\n                        \"arrival_time\": \"14:00:00\",\n                        \"cost\": 400,\n                        \"created_at\": \"\",\n                        \"updated_at\": \"\"\n                    }\n                ],\n                \"created_at\": \"\",\n                \"updated_at\": \"\"\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://0.0.0.0:80/api/admin/trips?page=1\",\n            \"last\": \"http://0.0.0.0:80/api/admin/trips?page=2\",\n            \"prev\": null,\n            \"next\": \"http://0.0.0.0:80/api/admin/trips?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 2,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/trips?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/trips?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/admin/trips?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://0.0.0.0:80/api/admin/trips\",\n            \"per_page\": 3,\n            \"to\": 3,\n            \"total\": 4\n        }\n    }\n}"
+                        },
 						{
 							"name": "Get Paginate All Pages",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "127.0.0.1:8000/api/trips?page=*",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"trips"
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "*"
-										}
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/trips?page=*",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "trips"],
+                                    "query": [
+                                        {
+                                            "key": "page",
+                                            "value": "*"
+                                        }
+                                    ]
+                                }
 							},
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sat, 25 Nov 2023 21:25:23 GMT"
@@ -3575,20 +3118,11 @@
 							}
 						],
 						"url": {
-							"raw": "127.0.0.1:8000/api/trips/1",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"trips",
-								"1"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/trips/1",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "trips", "1"]
+                        }
 					},
 					"response": [
 						{
@@ -3597,29 +3131,20 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "127.0.0.1:8000/api/trips/1",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"trips",
-										"1"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/trips/1",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "trips", "1"]
+                                }
 							},
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sat, 25 Nov 2023 21:26:13 GMT"
@@ -3666,30 +3191,20 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "127.0.0.1:8000/api//trips/20",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"",
-										"trips",
-										"20"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api//trips/20",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "", "trips", "20"]
+                                }
 							},
 							"status": "Not Found",
 							"code": 404,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sat, 25 Nov 2023 21:26:56 GMT"
@@ -3763,20 +3278,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/trips/title",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"trips",
-								"title"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/trips/title",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "trips", "title"]
+                        }
 					},
 					"response": [
 						{
@@ -3794,30 +3300,20 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api//trips/title",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"",
-										"trips",
-										"title"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api//trips/title",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "", "trips", "title"]
+                                }
 							},
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sat, 25 Nov 2023 21:34:07 GMT"
@@ -3891,20 +3387,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/trips/search",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"trips",
-								"search"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/trips/search",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "trips", "search"]
+                        }
 					},
 					"response": [
 						{
@@ -3922,29 +3409,20 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/trips/search",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"trips",
-										"search"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/trips/search",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "trips", "search"]
+                                }
 							},
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sat, 25 Nov 2023 21:46:47 GMT"
@@ -4014,26 +3492,17 @@
 							}
 						],
 						"url": {
-							"raw": "127.0.0.1:8000/api/bookings/my-bookings?page=1",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"bookings",
-								"my-bookings"
-							],
-							"query": [
-								{
-									"key": "page",
-									"value": "1"
-								}
-							]
-						}
+                            "raw": "0.0.0.0:80/api/bookings/my-bookings?page=1",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "bookings", "my-bookings"],
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "1"
+                                }
+                            ]
+                        }
 					},
 					"response": [
 						{
@@ -4042,35 +3511,26 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "127.0.0.1:8000/api/bookings/my-bookings?page=*",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"bookings",
-										"my-bookings"
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "*"
-										}
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/bookings/my-bookings?page=*",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "bookings", "my-bookings"],
+                                    "query": [
+                                        {
+                                            "key": "page",
+                                            "value": "*"
+                                        }
+                                    ]
+                                }
 							},
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sun, 26 Nov 2023 00:59:04 GMT"
@@ -4112,80 +3572,71 @@
 							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"trip_id\": 1,\n            \"user_id\": 1,\n            \"seat_id\": 1,\n            \"start_stop\": {\n                \"id\": 1,\n                \"trip_id\": 1,\n                \"city_id\": 1,\n                \"order\": 1,\n                \"date\": \"2023-11-25\",\n                \"departure_time\": \"10:00:00\",\n                \"arrival_time\": \"12:00:00\",\n                \"cost\": 0,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            \"end_stop\": {\n                \"id\": 3,\n                \"trip_id\": 1,\n                \"city_id\": 3,\n                \"order\": 3,\n                \"date\": \"2023-11-25\",\n                \"departure_time\": \"14:00:00\",\n                \"arrival_time\": \"16:00:00\",\n                \"cost\": 50,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            \"cost\": 100,\n            \"created_at\": null,\n            \"updated_at\": null\n        }\n    ]\n}"
 						},
 						{
-							"name": "Get Paginate First Page",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "127.0.0.1:8000/api/bookings/my-bookings?page=1",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"bookings",
-										"my-bookings"
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "1"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
-								{
-									"key": "Date",
-									"value": "Sun, 26 Nov 2023 00:59:58 GMT"
-								},
-								{
-									"key": "Date",
-									"value": "Sun, 26 Nov 2023 00:59:58 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "close"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "PHP/8.2.0"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "no-cache, private"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "X-RateLimit-Limit",
-									"value": "60"
-								},
-								{
-									"key": "X-RateLimit-Remaining",
-									"value": "59"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"trip_id\": 1,\n                \"user_id\": 1,\n                \"seat_id\": 1,\n                \"start_stop\": {\n                    \"id\": 1,\n                    \"trip_id\": 1,\n                    \"city_id\": 1,\n                    \"order\": 1,\n                    \"date\": \"2023-11-25\",\n                    \"departure_time\": \"10:00:00\",\n                    \"arrival_time\": \"12:00:00\",\n                    \"cost\": 0,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"end_stop\": {\n                    \"id\": 3,\n                    \"trip_id\": 1,\n                    \"city_id\": 3,\n                    \"order\": 3,\n                    \"date\": \"2023-11-25\",\n                    \"departure_time\": \"14:00:00\",\n                    \"arrival_time\": \"16:00:00\",\n                    \"cost\": 50,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"cost\": 100,\n                \"created_at\": null,\n                \"updated_at\": null\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://127.0.0.1:8000/api/bookings/my-bookings?page=1\",\n            \"last\": \"http://127.0.0.1:8000/api/bookings/my-bookings?page=1\",\n            \"prev\": null,\n            \"next\": null\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 1,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://127.0.0.1:8000/api/bookings/my-bookings?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": null,\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://127.0.0.1:8000/api/bookings/my-bookings\",\n            \"per_page\": 3,\n            \"to\": 1,\n            \"total\": 1\n        }\n    }\n}"
-						}
+                            "name": "Get Paginate First Page",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "0.0.0.0:80/api/bookings/my-bookings?page=1",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "bookings", "my-bookings"],
+                                    "query": [
+                                        {
+                                            "key": "page",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Sun, 26 Nov 2023 00:59:58 GMT"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Sun, 26 Nov 2023 00:59:58 GMT"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "close"
+                                },
+                                {
+                                    "key": "X-Powered-By",
+                                    "value": "PHP/8.2.0"
+                                },
+                                {
+                                    "key": "Cache-Control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                },
+                                {
+                                    "key": "X-RateLimit-Limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "X-RateLimit-Remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "Access-Control-Allow-Origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"trip_id\": 1,\n                \"user_id\": 1,\n                \"seat_id\": 1,\n                \"start_stop\": {\n                    \"id\": 1,\n                    \"trip_id\": 1,\n                    \"city_id\": 1,\n                    \"order\": 1,\n                    \"date\": \"2023-11-25\",\n                    \"departure_time\": \"10:00:00\",\n                    \"arrival_time\": \"12:00:00\",\n                    \"cost\": 0,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"end_stop\": {\n                    \"id\": 3,\n                    \"trip_id\": 1,\n                    \"city_id\": 3,\n                    \"order\": 3,\n                    \"date\": \"2023-11-25\",\n                    \"departure_time\": \"14:00:00\",\n                    \"arrival_time\": \"16:00:00\",\n                    \"cost\": 50,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                },\n                \"cost\": 100,\n                \"created_at\": null,\n                \"updated_at\": null\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://0.0.0.0:80/api/bookings/my-bookings?page=1\",\n            \"last\": \"http://0.0.0.0:80/api/bookings/my-bookings?page=1\",\n            \"prev\": null,\n            \"next\": null\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 1,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://0.0.0.0:80/api/bookings/my-bookings?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": null,\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://0.0.0.0:80/api/bookings/my-bookings\",\n            \"per_page\": 3,\n            \"to\": 1,\n            \"total\": 1\n        }\n    }\n}"
+                        }
 					]
 				},
 				{
@@ -4219,20 +3670,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/bookings/getavailableseats",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"bookings",
-								"getavailableseats"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/bookings/getavailableseats",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "bookings", "getavailableseats"]
+                        }
 					},
 					"response": [
 						{
@@ -4256,29 +3698,24 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/bookings/getavailableseats",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"bookings",
-										"getavailableseats"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/bookings/getavailableseats",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": [
+                                        "api",
+                                        "bookings",
+                                        "getavailableseats"
+                                    ]
+                                }
 							},
 							"status": "Unprocessable Content",
 							"code": 422,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sun, 26 Nov 2023 01:43:02 GMT"
@@ -4340,29 +3777,24 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/bookings/getavailableseats",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"bookings",
-										"getavailableseats"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/bookings/getavailableseats",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": [
+                                        "api",
+                                        "bookings",
+                                        "getavailableseats"
+                                    ]
+                                }
 							},
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sun, 26 Nov 2023 01:44:45 GMT"
@@ -4424,29 +3856,24 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/bookings/getavailableseats",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"bookings",
-										"getavailableseats"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/bookings/getavailableseats",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": [
+                                        "api",
+                                        "bookings",
+                                        "getavailableseats"
+                                    ]
+                                }
 							},
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sun, 26 Nov 2023 01:45:37 GMT"
@@ -4520,19 +3947,11 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/bookings",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"bookings"
-							]
-						}
+                            "raw": "0.0.0.0:80/api/bookings",
+                            "host": ["127", "0", "0", "1"],
+                            "port": "8000",
+                            "path": ["api", "bookings"]
+                        }
 					},
 					"response": [
 						{
@@ -4556,28 +3975,20 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/bookings",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"bookings"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/bookings",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "bookings"]
+                                }
 							},
 							"status": "Internal Server Error",
 							"code": 500,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sun, 26 Nov 2023 02:38:36 GMT"
@@ -4639,28 +4050,20 @@
 									}
 								},
 								"url": {
-									"raw": "127.0.0.1:8000/api/bookings",
-									"host": [
-										"127",
-										"0",
-										"0",
-										"1"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"bookings"
-									]
-								}
+                                    "raw": "0.0.0.0:80/api/bookings",
+                                    "host": ["127", "0", "0", "1"],
+                                    "port": "8000",
+                                    "path": ["api", "bookings"]
+                                }
 							},
 							"status": "Created",
 							"code": 201,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
+                                    "key": "Host",
+                                    "value": "0.0.0.0:80"
+                                },
 								{
 									"key": "Date",
 									"value": "Sun, 26 Nov 2023 02:59:43 GMT"
