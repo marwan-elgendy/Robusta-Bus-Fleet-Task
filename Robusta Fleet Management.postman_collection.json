@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "6fb997f2-4723-4b5b-aa24-f9a71714fe89",
+		"_postman_id": "c467e94d-de12-4bed-ab29-a49a36eb43cb",
 		"name": "Robusta Fleet Management",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "17767424"
+		"_exporter_id": "33247037"
 	},
 	"item": [
 		{
@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Marwan Elgendy\",\r\n    \"email\": \"marwanelgendy@gmail.com\",\r\n    \"password\": \"Mm#9#2001\",\r\n    \"password_confirmation\": \"Mm#9#2001\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Marwan Elgendy\",\r\n    \"email\": \"marwanelgendy@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"password_confirmation\": \"password\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
